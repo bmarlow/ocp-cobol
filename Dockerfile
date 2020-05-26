@@ -1,4 +1,4 @@
-FROM ubi7/ubi
+FROM registry.access.redhat.com/ubi7/ubi
 
 EXPOSE 8080
 
