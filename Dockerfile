@@ -4,8 +4,8 @@ EXPOSE 8080
 
 COPY ./gnu-cobol.jpg /tmp
 COPY ./openshift.png /tmp
-RUN yum-config-manager --disable '*'
-RUN yum-config-manager --enable 'rhel-7-server-rpms'
+RUN yum-config-manager --disable 'rhel-7-server-htb-rpms'
+#RUN yum-config-manager --enable 'rhel-7-server-rpms'
 COPY ./centos7.repo /etc/yum.repos.d
 COPY ./libcob-1.1-5.el7.x86_64.rpm /tmp
 COPY ./open-cobol-1.1-5.el7.x86_64.rpm /tmp
