@@ -1,10 +1,11 @@
-FROM registry.access.redhat.com/ubi7/ubi
+FROM centos:7
+#FROM registry.access.redhat.com/ubi7/ubi
 
 EXPOSE 8080
 
 COPY ./gnu-cobol.jpg /tmp
 COPY ./openshift.png /tmp
-COPY ./centos7.repo /etc/yum.repos.d
+#COPY ./centos7.repo /etc/yum.repos.d
 COPY ./libcob-1.1-5.el7.x86_64.rpm /tmp
 COPY ./open-cobol-1.1-5.el7.x86_64.rpm /tmp
 
