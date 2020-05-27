@@ -36,6 +36,6 @@ RUN chmod +x /tmp/create_index.sh
 
 RUN touch /tmp/index.html
 
-RUN chmod 755 /tmp/index.html
+RUN chmod 777 /tmp/index.html
 
 CMD cd /tmp && bash create_index.sh && python -m SimpleHTTPServer 8080
